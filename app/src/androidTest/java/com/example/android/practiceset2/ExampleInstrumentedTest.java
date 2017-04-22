@@ -1,4 +1,4 @@
-package com.ramilearningandroid.justjava;
+package com.example.android.practiceset2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ramilearningandroid.justjava", appContext.getPackageName());
+        assertEquals("com.example.android.practiceset2", appContext.getPackageName());
     }
 }

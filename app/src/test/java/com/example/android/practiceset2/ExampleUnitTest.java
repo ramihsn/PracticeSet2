@@ -1,4 +1,4 @@
-package com.ramilearningandroid.justjava;
+package com.example.android.practiceset2;
 
 import org.junit.Test;
 
