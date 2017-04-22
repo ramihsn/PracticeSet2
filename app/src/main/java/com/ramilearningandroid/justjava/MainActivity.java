@@ -19,7 +19,7 @@ import android.widget.TextView;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
-
+    private int num = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int num = 1;
         int price = 5;
         display(num);
         displayPrice(num*price);
@@ -52,5 +51,17 @@ public class MainActivity extends AppCompatActivity {
     private void displayPrice(int number){
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+    }
+
+    public void subFromQuantity(View view) {
+        if (num > 0){
+            num--;
+        }
+        display(num);
+    }
+
+    public void addToQuantity(View view) {
+        num++;
+        display(num);
     }
 }

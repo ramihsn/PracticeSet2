@@ -16,6 +16,12 @@
         androis:layout_marginBottom="16dp"
         androis:textAllCaps="true"/>
 
+    <Button
+        androis:layout_width="wrap_content"
+        androis:layout_height="wrap_content"
+        androis:text="+"
+        androis:onClick="addToQuantity"/>
+
     <TextView
         androis:id="@+id/quantity_text_view"
         androis:layout_width="match_parent"
@@ -23,6 +29,12 @@
         androis:textSize="16sp"
         androis:textColor="@android:color/black"
         androis:text="0"/>
+
+    <Button
+        androis:layout_width="wrap_content"
+        androis:layout_height="wrap_content"
+        androis:text="-"
+        androis:onClick="subFromQuantity"/>
 
     <TextView
         androis:layout_width="match_parent"
