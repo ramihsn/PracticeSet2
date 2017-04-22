@@ -53,15 +53,15 @@ public class MainActivity extends AppCompatActivity {
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
-    public void subFromQuantity(View view) {
-        if (num > 0){
-            num--;
-        }
+    public void increment(View view) {
+        num++;
         display(num);
     }
 
-    public void addToQuantity(View view) {
-        num++;
+    public void decrement(View view) {
+        if (num > 0){
+            num--;
+        }
         display(num);
     }
 }

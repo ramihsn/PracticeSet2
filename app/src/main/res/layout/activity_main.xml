@@ -17,10 +17,10 @@
         androis:textAllCaps="true"/>
 
     <Button
-        androis:layout_width="wrap_content"
-        androis:layout_height="wrap_content"
+        androis:layout_width="48dp"
+        androis:layout_height="48dp"
         androis:text="+"
-        androis:onClick="addToQuantity"/>
+        androis:onClick="increment"/>
 
     <TextView
         androis:id="@+id/quantity_text_view"
@@ -31,10 +31,10 @@
         androis:text="0"/>
 
     <Button
-        androis:layout_width="wrap_content"
-        androis:layout_height="wrap_content"
+        androis:layout_width="48dp"
+        androis:layout_height="48dp"
         androis:text="-"
-        androis:onClick="subFromQuantity"/>
+        androis:onClick="decrement"/>
 
     <TextView
         androis:layout_width="match_parent"
