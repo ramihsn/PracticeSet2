@@ -28,7 +28,7 @@
         androis:layout_height="wrap_content"
         androis:textSize="16sp"
         androis:textColor="@android:color/black"
-        androis:text="0"/>
+        androis:text="2"/>
 
     <Button
         androis:layout_width="48dp"

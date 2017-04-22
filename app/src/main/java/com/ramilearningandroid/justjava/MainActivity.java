@@ -12,6 +12,7 @@ import android.icu.text.NumberFormat;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,20 +20,30 @@ import android.widget.TextView;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
-    private int num = 0;
+    private int quantity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        quantity = toInt(((TextView) findViewById(R.id.quantity_text_view)).getText().toString());
     }
 
+    private int toInt(String str){
+        int result = 0;
+        try{
+            result = Integer.parseInt(str);
+        }catch (Exception e){
+            result = 0;
+        }
+        return result;
+    }
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
         int price = 5;
-        display(num);
-        displayPrice(num*price);
+        display(quantity);
+        displayPrice(quantity *price);
     }
 
     /**
@@ -54,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increment(View view) {
-        num++;
-        display(num);
+        quantity++;
+        display(quantity);
     }
 
     public void decrement(View view) {
-        if (num > 0){
-            num--;
+        if (quantity > 0){
+            quantity--;
         }
-        display(num);
+        display(quantity);
     }
 }
