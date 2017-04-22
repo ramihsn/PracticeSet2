@@ -26,7 +26,8 @@
         androis:layout_width="wrap_content"
         androis:layout_height="wrap_content"
         androis:layout_marginTop="16dp"
-        androis:text="Order"/>
+        androis:text="Order"
+        androis:onClick="submitOrder"/>
 
 
 </LinearLayout>
