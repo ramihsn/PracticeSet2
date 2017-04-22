@@ -7,6 +7,9 @@ package com.ramilearningandroid.justjava;
  * package com.example.android.justjava; 
  */
 
+import android.annotation.TargetApi;
+import android.icu.text.NumberFormat;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -36,5 +39,16 @@ public class MainActivity extends AppCompatActivity {
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
+        displayPrice(number);
+    }
+
+    /**
+     * This method displays the given quantity value on the screen
+     * @param number - the number of the cups of coffee
+     */
+    @TargetApi(Build.VERSION_CODES.N)
+    private void displayPrice(int number){
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 }
