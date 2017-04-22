@@ -1,0 +1,18 @@
+<application>
+  <component name="DiffSettings">
+    <option name="PLACES_MAP">
+      <entry key="ChangesView">
+        <PlaceSettings />
+      </entry>
+      <entry key="CommitDialog">
+        <PlaceSettings />
+      </entry>
+      <entry key="Default">
+        <PlaceSettings />
+      </entry>
+      <entry key="TestsFiledAssertions">
+        <PlaceSettings />
+      </entry>
+    </option>
+  </component>
+</application>
