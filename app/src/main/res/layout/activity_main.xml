@@ -12,20 +12,21 @@
     <TextView
         androis:layout_width="match_parent"
         androis:layout_height="wrap_content"
-        androis:text="QUANTITY"/>
+        androis:text="Quantity"
+        androis:layout_marginBottom="16dp"
+        androis:textAllCaps="true"/>
     <TextView
         androis:id="@+id/quantity_text_view"
         androis:layout_width="match_parent"
         androis:layout_height="wrap_content"
         androis:textSize="16sp"
         androis:textColor="@android:color/black"
-        androis:layout_marginTop="16dp"
         androis:text="0"/>
     <Button
         androis:layout_width="wrap_content"
         androis:layout_height="wrap_content"
         androis:layout_marginTop="16dp"
-        androis:text="OREDER"/>
+        androis:text="Order"/>
 
 
 </LinearLayout>
